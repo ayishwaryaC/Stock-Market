@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Live</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <button id="menuBtn" class="toggle-btn">☰</button>
+            <h1>StockSecure</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="investing.html">Investing</a>
+                <a href="finance.html">Personal Finance</a>
+                <a href="economy.html">Economy</a>
+                <a href="watchlist.html">Watchlist</a>
+            </nav>
+            <input type="text" id="searchStock" placeholder="Search Stocks..." />
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+
+    <div class="news-ticker">
+        <div class="news-content">
+            <p>🔥 Dow Jones up 1.5% today! | 📉 Tesla stock drops 3.2% | 🚀 Bitcoin reaches $60K! | 📊 Federal Reserve announces new policy updates</p>
+        </div>
+    </div>
+
+    <section class="stock-overview">
+        <h2>📊 What is the Stock Market?</h2>
+        <p>
+            The stock market is a dynamic arena where investors seek opportunities to grow their wealth. StockSecure is designed to provide a reliable and secure platform for trading shares of publicly listed companies. By leveraging cutting-edge market insights, real-time data, and advanced analytical tools, investors can make informed decisions with confidence. Stock prices fluctuate based on factors such as supply and demand, corporate performance, and global economic trends, making it essential to stay updated and strategic.
+        </p>
+        <p>
+            At StockSecure, we prioritize investor success by offering expert guidance and innovative trading solutions. Whether navigating major exchanges like the NYSE, Nasdaq, or London Stock Exchange, our platform ensures seamless access to market trends and investment strategies. From fundamental analysis to technical indicators, StockSecure empowers traders with the knowledge and tools needed for financial growth while managing risks effectively.
+        </p>
+    </section>
+   
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+        <button id="closeBtn" class="close-btn">✖</button>
+        <a href="index.html">    Home</a>
+        <a href="investing.html">    Investing</a>
+        <a href="finance.html">   Personal Finance</a>
+        <a href="economy.html">   Economy</a>
+        <a href="watchlist.html">   Watchlist</a>
+    </div>
+
+    
+   
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+   
+    <div class="side-menu">
+        <button class="close-btn">&times;</button>
+        <a href="#">Home</a>
+        <a href="#">Markets</a>
+        <a href="#">News</a>
+        <a href="#">Investing</a>
+        <a href="#">Portfolio</a>
+    </div>
+    <div class="overlay"></div>
+
+    <br>
+    <br>
+    <br>
+    <main>
+        <section class="market-data">
+            <h2>📈 Market Overview</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="change tr region" data-region="US">US</th>
+                        <th class="change tr region" data-region="Europe">Europe</th>
+                        <th class="change tr region" data-region="Asia">Asia</th>
+                        <th class="change tr region" data-region="Australia">Australia</th>
+                        <th class="change tr region" data-region="Middle East">Middle East</th>
+                        <th class="change tr region" data-region="South America">South America</th>
+                        <th class="change tr region" data-region="Africa">Africa</th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th class="change tr">Stock</th>
+                        <th class="change tr">Price</th>
+                        <th class="change tr">Change</th>
+                        <th class="change tr">Percent</th>
+                    </tr>
+                </thead>
+                
+                <tbody id="stockTable"></tbody>
+            </table>
+        </section>
+        
+        <div class="market-image">
+            <img src="" alt="">
+        </div>
+
+        <section class="news">
+            <h2>📢 Latest Stock News</h2>
+            <ul id="newsList"></ul>
+            <h6></h6>
+        </section>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

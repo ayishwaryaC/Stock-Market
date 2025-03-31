@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Live</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <button id="menuBtn" class="toggle-btn">☰</button>
+            <h1>MarketWatch Pro</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="investing.html">Investing</a>
+                <a href="finance.html">Personal Finance</a>
+                <a href="economy.html">Economy</a>
+                <a href="watchlist.html">Watchlist</a>
+            </nav>
+            <input type="text" id="searchStock" placeholder="Search Stocks..." />
+            <!-- <button id="searchBtn">Search</button> -->
+        </div>
+    </header>
+
+    <div class="news-ticker">
+        <div class="news-content">
+            <p>🔥 Dow Jones up 1.5% today! | 📉 Tesla stock drops 3.2% | 🚀 Bitcoin reaches $60K! | 📊 Federal Reserve announces new policy updates</p>
+        </div>
+    </div>
+   
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+        <button id="closeBtn" class="close-btn">✖</button>
+        <a href="index.html">    Home</a>
+        <a href="investing.html">    Investing</a>
+        <a href="finance.html">   Personal Finance</a>
+        <a href="economy.html">   Economy</a>
+        <a href="watchlist.html">   Watchlist</a>
+    </div>
+   
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+   
+    <div class="side-menu">
+        <button class="close-btn">&times;</button>
+        <a href="#">Home</a>
+        <a href="#">Markets</a>
+        <a href="#">News</a>
+        <a href="#">Investing</a>
+        <a href="#">Portfolio</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
